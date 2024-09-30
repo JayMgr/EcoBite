@@ -1,0 +1,73 @@
+﻿@{
+    ViewBag.Title = "Dashboard";
+}
+
+<div class="container-fluid">
+    <h1 class="text-center mt-4">EcoBite Dashboard</h1>
+
+    <div class="row mt-5">
+        <!-- Total Donations -->
+        <div class="col-md-4">
+            <div class="card text-white bg-primary mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Total Donations</h5>
+                    <h3>@Model.TotalDonations</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Receivers -->
+        <div class="col-md-4">
+            <div class="card text-white bg-success mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Total Receivers</h5>
+                    <h3>@Model.TotalReceivers</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Total Volunteers -->
+        <div class="col-md-4">
+            <div class="card text-white bg-info mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Total Volunteers</h5>
+                    <h3>@Model.TotalVolunteers</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <!-- Active Deliveries -->
+        <div class="col-md-4">
+            <div class="card text-white bg-warning mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Active Deliveries</h5>
+                    <h3>@Model.ActiveDeliveries</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pending Delivery Requests -->
+        <div class="col-md-4">
+            <div class="card text-white bg-danger mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Pending Delivery Requests</h5>
+                    <h3>@Model.PendingRequests</h3>
+                </div>
+            </div>
+        </div>
+
+        <!-- Environmental Impact -->
+        <div class="col-md-4">
+            <div class="card text-white bg-dark mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Environmental Impact</h5>
+                    <h3>@Model.EnvironmentalImpact</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Optional: Add a custom script or any logic you need below -->

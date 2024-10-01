@@ -16,5 +16,8 @@ namespace EcoBiteWeb.Controllers
             List<Fooditem> objFooditemList = _db.Fooditems.ToList();
             return View(objFooditemList);
         }
+        public IActionResult Create() {
+            return View();
+        }
     }
 }

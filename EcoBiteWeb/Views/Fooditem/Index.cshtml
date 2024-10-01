@@ -1,1 +1,23 @@
-﻿<h1>Fooditem List</h1>
+﻿@model List<Fooditem>
+
+
+<h1>Fooditem List</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Food Name</th>
+            <th>Description</th>
+            <th>Expiration Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Description</td>
+                <td>@item.ExpirationDate.ToString()</td>
+            </tr>
+        }
+    </tbody>
+</table>

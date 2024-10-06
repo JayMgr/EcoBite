@@ -1,4 +1,4 @@
-﻿namespace EcoBiteWeb.ViewModels
+﻿namespace EcoBiteBookWeb.ViewModels
 {
     public class DashboardViewModel
     {

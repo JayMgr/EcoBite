@@ -1,4 +1,4 @@
-﻿using EcoBiteWeb.ViewModels;
+﻿using EcoBiteBookWeb.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 
 public class DashboardController : Controller
